@@ -1,1 +1,8 @@
 hdfs/hadoop-*
+hdfs/host*
+hdfs_data/*
+hdfs_journal/*
+
+zookeeper/zookeeper-*
+hbase/hbase-*
+hive/*

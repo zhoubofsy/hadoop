@@ -1,0 +1,9 @@
+FROM hadoop_base:1
+
+MAINTAINER zhoub
+
+
+
+CMD ["-D"]
+
+ENTRYPOINT ["/usr/sbin/sshd"]

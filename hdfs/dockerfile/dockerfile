@@ -1,0 +1,14 @@
+FROM hadoop_base:1
+
+MAINTAINER zhoub
+
+EXPOSE 8088
+
+RUN echo "JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.el7_3.x86_64/jre" | tee -a /etc/bashrc
+RUN echo "export JAVA_HOME" | tee -a /etc/bashrc
+RUN echo "HADOOP_PREFIX=/root/hadoop" | tee -a /etc/bashrc
+RUN echo "export HADOOP_PREFIX" | tee -a /etc/bashrc
+
+CMD ["-D"]
+
+ENTRYPOINT ["/usr/sbin/sshd"]
